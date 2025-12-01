@@ -1,0 +1,91 @@
+nav{
+    background-color: rgb(255, 255, 255);
+text-align: center;
+padding: 12px ;
+
+}
+body{
+    background-color: rgb(255, 244, 229);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 10vh;
+  height: 100vh;                 
+  
+}
+
+
+footer{
+    background-color: rgb(148, 54, 0);
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    height: 50px;
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-size: 60px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 16px 40px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.main-nav a:hover {
+  color: #e67e22; 
+}
+
+.cta-btn {
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: none;
+  background-color: #e67e22;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cta-btn:hover {
+  background-color: #cf6d14;
+}
+
+.bg-box {
+  width: 100vw;                
+  height: 50vh;            
+  background-image: url("tuttolente-aw24-fashion-x-stockholm-fashion-week-2-1024x771.jpeg"); 
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
+  border-radius: 10px;       
+}
