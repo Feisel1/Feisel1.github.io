@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   header.innerHTML = `
     <div class="main-header">
-      <div class="logo">Nordic Apparel</div>
+      <div class="logo">Nordic Appael</div>
 
       <nav class="main-nav">
         <a href="index.html">Start</a>
@@ -13,17 +13,47 @@ document.addEventListener('DOMContentLoaded', () => {
         <a href="#gallery">Galleri</a>
         <a href="#support">Kundservice</a>
         <a href="info.html">Om oss</a>
-        <button class="cta-btn">Shoppa nu</button>
+        <button class="cta-btn"> <a href="info.html">shoppa nu</a></button>
       </nav>
     </div>
   `;
 });
 
-const div = document.addEventListener(´'div.bg-box', ()  => {
-  const div = document.querySelector('div.bg-box');
-  if (!div) return;
+document.addEventListener('DOMContentLoaded', () => {
+  const footer = document.querySelector('footer');
+  if (!footer) return;
 
-  div.innerHTML = `
-    <div class="bg-box"></div>
+  footer.innerHTML = `
+    <p class="p-fotter">&copy; Feisel production</p>
+    <p>Call us: +46700123456</p>
   `;
+});
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  if (window.location.pathname.endsWith('index.html') || window.location.pathname === '/') {
+    let bgBox = document.querySelector('div.bg-box');
+    
+    
+    if (!bgBox) {
+      const main = document.querySelector('main');
+      if (main) {
+        bgBox = document.createElement('div');
+        bgBox.className = 'bg-box';
+        main.insertBefore(bgBox, main.firstChild);
+      }
+    }
+
+    if (bgBox) {
+      
+      const title = document.createElement('h1');
+      title.textContent = 'Välkommen till Nordic Appeal';
+      title.className = 'hero-title';
+
+      
+      bgBox.appendChild(title);
+    }
+  }
 });
