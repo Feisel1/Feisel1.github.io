@@ -31,29 +31,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-document.addEventListener('DOMContentLoaded', () => {
-
-  if (window.location.pathname.endsWith('index.html') || window.location.pathname === '/') {
-    let bgBox = document.querySelector('div.bg-box');
-    
-    
-    if (!bgBox) {
-      const main = document.querySelector('main');
-      if (main) {
-        bgBox = document.createElement('div');
-        bgBox.className = 'bg-box';
-        main.insertBefore(bgBox, main.firstChild);
-      }
-    }
-
-    if (bgBox) {
-      
-      const title = document.createElement('h1');
-      title.textContent = 'Välkommen till Nordic Appeal';
-      title.className = 'hero-title';
-
-      
-      bgBox.appendChild(title);
-    }
-  }
-});
