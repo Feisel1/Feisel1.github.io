@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweatshirt - Nordic Apparel</title>
+  <link rel="stylesheet" href="nordic.css" />
+  <link rel="stylesheet" href="product.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+<header></header>
+
+<main class="product-page">
+  <a href="produktkatalog.html" class="back-link">← Tillbaka till produkter</a>
+
+  <div class="product-container reveal" data-direction="up">
+    <div class="product-images">
+      <img src="asjd.jpg" alt="Knit Wear" class="main-image" id="mainImage">
+      
+      <div class="thumbnail-container">
+        <img src="asjd.jpg" alt="View 1" class="thumbnail active" onclick="changeImage(this)">
+        
+      </div>
+    </div>
+
+    <div class="product-info" data-product-name="Knit Wear">
+      <h1 class="product-title" data-product-name="Knit Wear">Knit Wear</h1>
+      <p class="product-price">400 kr</p>
+      
+      <p class="product-description">
+       En varm och stickad sweatshirt med ett unikt, skandinaviskt inspirerat mönster i grått och vitt. 
+  Tillverkad i en mjuk och tjock ullblandning som håller dig varm hela vintern – perfekt för kyliga promenader, mysiga hemmakvällar eller som ett stilfullt lager under jackan.
+  
+  Den avslappnade passformen och ribbade detaljer vid ärmslut, fåll och halsringning ger en tidlös och bekväm känsla. 
+  Ett plagg som kombinerar nordisk hantverkstradition med modern komfort – lika vackert som praktiskt.
+  </p>
+
+      <div class="size-selector">
+        <h3>Välj storlek</h3>
+        <div class="size-options">
+          <button class="size-option" onclick="selectSize(this)">XS</button>
+          <button class="size-option" onclick="selectSize(this)">S</button>
+          <button class="size-option selected" onclick="selectSize(this)">M</button>
+          <button class="size-option" onclick="selectSize(this)">L</button>
+          <button class="size-option" onclick="selectSize(this)">XL</button>
+          <button class="size-option" onclick="selectSize(this)">XXL</button>
+        </div>
+      </div>
+
+      <div class="color-selector">
+        <h3>Välj färg</h3>
+        <div class="color-options">
+          
+          <div class="color-option" style="background-color: #757575;" onclick="selectColor(this)" title="Grå"></div>
+        </div>
+      </div>
+
+      <button class="add-to-cart" onclick="addToCart()">Lägg i varukorgen</button>
+
+      <div class="product-details">
+        <h3>Produktinformation</h3>
+        <ul>
+          <li>100% bomull</li>
+          <li>Hållbart producerad i Europa</li>
+          <li>Ribbad halsringning, manschetter och fåll</li>
+          <li>Tvättas i 30°C</li>
+          <li>lös passform</li>
+          <li>Unisex design</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer></footer>
+
+<script src="nordic.js"></script>
+
+
+</body>
+
+</html>

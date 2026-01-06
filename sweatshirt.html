@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweatshirt - Nordic Apparel</title>
+  <link rel="stylesheet" href="nordic.css" />
+  <link rel="stylesheet" href="product.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+<header></header>
+
+<main class="product-page">
+  <a href="produktkatalog.html" class="back-link">← Tillbaka till produkter</a>
+
+  <div class="product-container reveal" data-direction="up">
+    <div class="product-images">
+      <img src="grok.avif" alt="Nordic Sweatshirt" class="main-image" id="mainImage">
+      
+      <div class="thumbnail-container">
+        <img src="grok.avif" alt="View 1" class="thumbnail active" onclick="changeImage(this)">
+       
+      </div>
+    </div>
+
+    <div class="product-info">
+      <h1 class="product-title"> Sweatshirt</h1>
+      <p class="product-price">350 kr</p>
+      
+      <p class="product-description">
+        En klassisk sweatshirt i mjuk bomullsblandning. Perfekt för vardagen med sin minimalistiska design och skandinaviska känsla. 
+        Tillverkad med hållbara material och tidlös stil som håller säsong efter säsong.
+      </p>
+
+      <div class="size-selector">
+        <h3>Välj storlek</h3>
+        <div class="size-options">
+          <button class="size-option" onclick="selectSize(this)">XS</button>
+          <button class="size-option" onclick="selectSize(this)">S</button>
+          <button class="size-option selected" onclick="selectSize(this)">M</button>
+          <button class="size-option" onclick="selectSize(this)">L</button>
+          <button class="size-option" onclick="selectSize(this)">XL</button>
+          <button class="size-option" onclick="selectSize(this)">XXL</button>
+        </div>
+      </div>
+
+      <div class="color-selector">
+        <h3>Välj färg</h3>
+        <div class="color-options">
+         
+          <div class="color-option" style="background-color: #9ec5db;" onclick="selectColor(this)" title="soft blue"></div>
+            </div>
+      </div>
+
+      <button class="add-to-cart" onclick="addToCart()">Lägg i varukorgen</button>
+
+      <div class="product-details">
+        <h3>Produktinformation</h3>
+        <ul>
+          <li>80% bomull, 20% polyester</li>
+          <li>Hållbart producerad i Europa</li>
+          <li>Ribbad halsringning, manschetter och fåll</li>
+          <li>Tvättas i 40°C</li>
+          <li>Normal passform</li>
+          <li>Unisex design</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer></footer>
+
+<script src="nordic.js"></script>
+
+
+</body>
+
+</html>

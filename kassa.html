@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nordic Appeal</title>
+  <link rel="stylesheet" href="nordic.css" />
+</head>
+
+<body >
+
+<header></header>
+<main>
+  <div class="checkout-container">
+    <div class="cart-section">
+      <h1>Din varukorg</h1>
+
+      <div id="freeShippingBar" class="free-shipping-bar" style="display: none;">
+        <span id="freeShippingText"></span>
+      </div>
+
+      <div class="cart-items" id="cartItems">
+        
+      </div>
+    </div>
+
+    <div class="order-summary">
+      <h2>Ordersammanfattning</h2>
+
+      <div class="summary-row">
+        <span>Delsumma:</span>
+        <span id="subtotal">0 kr</span>
+      </div>
+
+      <div class="summary-row">
+        <span>Frakt:</span>
+        <span id="shipping">49 kr</span>
+      </div>
+
+      <div class="summary-row" id="discountRow" style="display: none; color: #27ae60;">
+        <span>Rabatt:</span>
+        <span id="discount">-0 kr</span>
+      </div>
+
+      <div class="summary-row total">
+        <span>Totalt:</span>
+        <span class="price" id="total">49 kr</span>
+      </div>
+
+      <div class="discount-code">
+        <input type="text" id="discountInput" placeholder="Rabattkod">
+        <button class="apply-discount" onclick="applyDiscount()">Använd rabattkod</button>
+      </div>
+
+      <button class="checkout-btn" onclick="proceedToCheckout()">Gå till kassan</button>
+
+      <div class="payment-methods">
+        <div class="payment-icon">VISA</div>
+        <div class="payment-icon">MC</div>
+        <div class="payment-icon">SWISH</div>
+        <div class="payment-icon">KLARNA</div>
+      </div>
+
+      <div class="shipping-info">
+        <h3>📦 Leveransinformation</h3>
+        <p>• Fri frakt över 500 kr<br>
+        • 2-4 dagars leveranstid<br>
+        • 30 dagars öppet köp</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer></footer>
+
+<script src="nordic.js"></script>

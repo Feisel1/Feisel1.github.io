@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nordic Appeal</title>
+  <link rel="stylesheet" href="nordic.css" />
+</head>
+
+<body >
+
+<header></header>
+
+<main class="kundservice-page">
+  <div class="kundservice-hero reveal" data-direction="up">
+    <h1>Hur kan vi hjälpa dig?</h1>
+    <p>Vi finns här för att göra din shoppingupplevelse så smidig som möjligt. Kontakta oss gärna!</p>
+  </div>
+
+  <div class="contact-grid">
+    <div class="contact-card reveal" data-direction="left">
+      <div class="contact-card-icon"></div>
+      <h3>Email</h3>
+      <p>Skicka oss ett mail</p>
+      <a href="mailto:info@nordicapparel.se">info@nordicapparel.se</a>
+    </div>
+
+    <div class="contact-card reveal" data-direction="up">
+      <div class="contact-card-icon"></div>
+      <h3>Telefon</h3>
+      <p>Ring oss vardagar 09:00-17:00</p>
+      <a href="tel:+46700123456">+46 700 123 456</a>
+    </div>
+
+    <div class="contact-card reveal" data-direction="right">
+      <div class="contact-card-icon"></div>
+      <h3>chatt</h3>
+      <p>Chatta med oss direkt</p>
+      <a href="#" onclick="alert('Livechatt öppnas snart!'); return false;">Starta chatt</a>
+    </div>
+  </div>
+
+  <section class="faq-section reveal" data-direction="up">
+    <h2>Vanliga frågor</h2>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFAQ(this)">
+        <span>Hur lång är leveranstiden?</span>
+        <span class="faq-arrow">▼</span>
+      </div>
+      <div class="faq-answer">
+        <p>Vi levererar normalt inom 2-5 arbetsdagar till Sverige. För beställningar utanför Sverige kan leveranstiden vara 5-10 arbetsdagar. Du får en spårningslänk via email så fort din order skickas.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFAQ(this)">
+        <span>Vad kostar frakten?</span>
+        <span class="faq-arrow">▼</span>
+      </div>
+      <div class="faq-answer">
+        <p>Vi erbjuder fri frakt på alla beställningar över 500 kr inom Sverige. Under 500 kr kostar frakten 49 kr. För internationella beställningar varierar fraktkostnaden beroende på destination.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFAQ(this)">
+        <span>Kan jag returnera min beställning?</span>
+        <span class="faq-arrow">▼</span>
+      </div>
+      <div class="faq-answer">
+        <p>Absolut! Du har 30 dagars öppet köp från det att du mottagit din order. Produkterna ska vara oanvända med prislapp kvar. Returnera enkelt via Postnord eller i vår butik i Stockholm.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFAQ(this)">
+        <span>Hur vet jag vilken storlek jag ska välja?</span>
+        <span class="faq-arrow">▼</span>
+      </div>
+      <div class="faq-answer">
+        <p>Varje produktsida har en storleksguide. Våra kläder har normal passform. Om du är osäker rekommenderar vi att du mäter ett klädesplagg du redan har och jämför med vår storlekstabell. Kontakta gärna kundservice om du behöver hjälp!</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFAQ(this)">
+        <span>Vilka betalningsmetoder accepterar ni?</span>
+        <span class="faq-arrow">▼</span>
+      </div>
+      <div class="faq-answer">
+        <p>Vi accepterar Visa, Mastercard, American Express, Klarna, Swish och PayPal. Alla betalningar sker via säker krypterad anslutning.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFAQ(this)">
+        <span>Är era produkter hållbart producerade?</span>
+        <span class="faq-arrow">▼</span>
+      </div>
+      <div class="faq-answer">
+        <p>Ja! Hållbarhet är kärnan i allt vi gör. Vi använder ekologisk bomull, återvunna material och producerar i Europa under rättvisa arbetsförhållanden. Alla våra produkter är GOTS-certifierade.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-form-section reveal" data-direction="up">
+    <h2>Kontakta oss</h2>
+    <form class="contact-form" onsubmit="submitForm(event)">
+      <div class="form-group">
+        <label for="name">Namn *</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Ämne *</label>
+        <select id="subject" name="subject" required>
+          <option value="">Välj ett ämne</option>
+          <option value="order">Fråga om order</option>
+          <option value="return">Retur/byte</option>
+          <option value="product">Produktfråga</option>
+          <option value="complaint">Klagomål</option>
+          <option value="other">Övrigt</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Meddelande *</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Skicka meddelande</button>
+    </form>
+  </section>
+
+  <div class="opening-hours reveal" data-direction="up">
+    <h2>Kundservice Öppettider</h2>
+    <div class="hours-list">
+      <div class="hours-item">
+        <span class="hours-day">Måndag - Fredag</span>
+        <span class="hours-time">09:00 - 17:00</span>
+      </div>
+      <div class="hours-item">
+        <span class="hours-day">Lördag</span>
+        <span class="hours-time">10:00 - 15:00</span>
+      </div>
+      <div class="hours-item">
+        <span class="hours-day">Söndag</span>
+        <span class="hours-time">Stängt</span>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer></footer>
+
+<script src="nordic.js"></script>
